@@ -1,0 +1,9 @@
+{
+  "name": "minesweeper",
+  "version": "0.0.0",
+  "description": "Minesweeper",
+  "main": "app.js",
+  "author": {
+    "name": "Mike"
+  }
+}
