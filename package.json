@@ -1,7 +1,7 @@
 {
-  "name": "minesweeper",
-  "version": "0.0.0",
-  "description": "Minesweeper",
+  "name": "Minesweeper",
+  "version": "0.0.1",
+  "description": "Basic Minesweeper game in NodeJS Typescript",
   "main": "app.js",
   "author": {
     "name": "Mike"
