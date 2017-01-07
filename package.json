@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "@types/knockout": "^3.4.38"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.58"
   }
 }
