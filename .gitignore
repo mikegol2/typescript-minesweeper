@@ -2,6 +2,7 @@
 .vs
 bin/
 obj/
+debug.log
 
 # js files are compiled from .ts files
 *.js
