@@ -9,6 +9,7 @@
     },
     "files": [
         "Field.ts",
-        "WebBased.ts"
+        "WebBased.ts",
+        "TextBased.ts",
     ]
 }

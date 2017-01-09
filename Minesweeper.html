@@ -26,17 +26,9 @@
     }
     </style>
 
-    <h1>Minesweeper 0.0.2</h1>
+    <h1>Minesweeper 0.0.3</h1>
 
     <table id='table'>
-        <tr>
-            <td>1,1</td>
-            <td>1,2</td>
-        </tr>
-        <tr>
-            <td>2,1</td>
-            <td>2,2</td>
-        </tr>
     </table>
 
     <script>
@@ -50,7 +42,6 @@
             var element = document.getElementById("table");
             m.main(element);
         });
-
         function blockClicked(row, col) {
             System.import('WebBased').then(function(m) {
                 m.blockClicked(row, col);
