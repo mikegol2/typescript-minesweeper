@@ -14,16 +14,49 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script src="WebBasic.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="minesweeper-clientside.js"></script>
 
-    <h1>Minesweeper</h1>
+    <style>
+    .block-open {
+        width:50px;
+    }
+    .block-notopen {
+        width:50px;
+    }
+    </style>
 
-    <a onclick="DoSomething()">do something</a>
+    <h1>Minesweeper 0.0.2</h1>
 
-    <div id="field"></div>
+    <table id='table'>
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+        </tr>
+    </table>
 
-    
+    <script>
+        System.transpiler = 'typescript';
+        System.meta['typescript'] = { format: 'global', exports: 'ts' };
+        System.paths = {
+            '*': '*.ts',
+            'typescript': 'node_modules/typescript/lib/typescript.js'
+        }
+        System.import('WebBased').then(function(m) {
+            var element = document.getElementById("table");
+            m.main(element);
+        });
 
+        function blockClicked(row, col) {
+            System.import('WebBased').then(function(m) {
+                m.blockClicked(row, col);
+            });
+        }
+    </script>
 
 </body>
 </html>

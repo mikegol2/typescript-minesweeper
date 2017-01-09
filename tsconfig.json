@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outFile": "minesweeper-clientside.js"
+    },
+    "files": [
+        "Field.ts",
+        "WebBased.ts"
+    ]
+}

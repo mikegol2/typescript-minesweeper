@@ -1,8 +1,11 @@
 *.sln
 .vs
+.vscode
 bin/
 obj/
-debug.log
+*.log
+
+node_modules/
 
 # js files are compiled from .ts files
 *.js
